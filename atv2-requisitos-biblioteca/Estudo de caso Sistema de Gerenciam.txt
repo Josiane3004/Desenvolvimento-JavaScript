@@ -1,0 +1,17 @@
+Estudo de caso: Sistema de Gerenciamento de Biblioteca
+
+Levantamento de requisitos:
+- Funcionais:
+Cadastro do usuário que irá fazer a retirada do livro
+Determinar prazo de bloqueio fora do prazo
+Determinar o custo diário para devolução fora do prazo
+Identificação do livro
+Data e Horário de retirada
+Data e horário de devolução
+Envio de mensagem ao usuário de que esta vencendo o prazo da entrega do livro com alerta
+Bloqueio de usuário que devolver o livro fora do prazo
+
+
+- Não Funcionais:
+O Sistema precisa ser ágil para o cadastro e permitir o cadastro via celular(aplicativo)
+O sistema precisa ser online
