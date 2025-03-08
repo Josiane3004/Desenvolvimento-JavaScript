@@ -1,1 +1,5 @@
 JavaScript (JS) é uma linguagem de programação interpretada que permite criar páginas web dinâmicas e interativas. É a linguagem padrão dos navegadores e é considerada uma das mais populares no mundo. 
+É uma linguagem de alto nível, legível por humanos
+Não precisa de um compilador para ser traduzida para máquina
+O código é interpretado e executado diretamente no navegador
+Permite adicionar funcionalidades às páginas web, como menus suspensos, formulários, galerias de fotos, gráficos animados
