@@ -1,0 +1,1 @@
+JavaScript (JS) é uma linguagem de programação interpretada que permite criar páginas web dinâmicas e interativas. É a linguagem padrão dos navegadores e é considerada uma das mais populares no mundo. 
