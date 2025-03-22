@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Cursos do Senai.</h1>  
+        <nav>
+            <ul>
+                <li>Principal</li>
+                <li>Área do Aluno</li>
+                <li>Sobre Senai</li>
+            </ul>
+        </nav> 
+
+    </header>
+    
+
+    <main>
+        <section>
+             <h3>Meus Cursos Inscrito</h3>
+             <p>Bem Vindo a área do aluno !</p>
+             <p>Programa-se para concluir as atividades dentro do prazo.</p>
+             <p>Em caso de dúvidas, entre em contato com o suporte.</p>
+
+             <h4>Cursos em Andamento</h4>
+             <ul>
+                <li><strong>Desenvolvimento JS</strong>     - Progresso: 35%</li>
+                <li><strong>Desenvolvimento Python</strong> - Progresso: 20%</li>
+                <li><strong>Inteligência Artificial</strong> - Progresso: 0%</li>
+
+             </ul>
+
+             <h4>Cursos Concluídos</h4>
+             <ol type="A">
+                <li><strong>Banco de Dados SQL</strong> - Concluído em 10/12/2023</li>
+                <li><strong>Desenvolvimento Delphi</strong> - Concluído em 31/12/2008</li>
+                <li><strong>Gestão de Pessoas</strong> - Concluído em 31/12/2024</li>
+             </ol>
+
+
+         </section>
+         
+         <section>
+             <h3>Alunos em Destaque</h3>
+             <dl>
+                <dt><strong>Desenvolvimento JS</strong></dt>
+                <dd>JOSIANE ARAUJO MAGALHAES - Nota: 10.0</dd>
+                <dd>MARCIANO MOREIRA ANTONIOLLI - Nota: 10.0</dd>
+
+                <dt><strong>Desenvolvimento Python</strong></dt>
+                <dd>JOSIANE ARAUJO MAGALHAES - Nota: 9.5</dd>
+                <dd>MARCIANO MOREIRA ANTONIOLLI - Nota: 9.5</dd>
+             </dl>
+         </section>
+
+         <section>
+            <h3>Calendário das Aulas</h3>
+            <p>Fique atento ao <b>prazo</b> das <strong>atividades</strong></p>
+            <p>Fique atento ao <i>prazo</i> das <em>atividades</em></p>
+            <p>Esse é um Texto <sup>sobrescrito</sup> e <sub>subscrito</sub></p>
+            <p>Texto <ins>inserido</ins> e Texto <del>excluido</del></p>
+            <p>Mais um texto, agora <small>pequeno</small> e <mark>destacado</mark></p>
+         </section>
+
+         <section>
+            <h3>Material Complementar</h3>
+            <a href="https://sp.senai.br/unidade/presidenteprudente/" 
+            target="_blank" rel="noopener noreferrer">Clique aqui Texto</a>
+            <a href="https://sp.senai.br/unidade/presidenteprudente/" 
+            target="_blank" rel="noopener noreferrer">
+            <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_1_230829_d339a06d-6dca-4a91-b890-a0eba7ca4c5f_o.avif" alt="Imagem do SENAI" width="200" height="200">
+        </a>
+         </section>
+         <section>
+            <h3>Financeiro</h3>
+            <table border="1">
+                <tr>
+                    <th>Mês</th>
+                    <th>Valor</th>
+                    <th>Situação</th>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$ 100,00</td>
+                    <td>Pago</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>R$ 100,00</td>
+                    <td><mark>Em Aberto</mark></td>
+                </tr>
+            </table>
+         </section>
+         <section>
+            <h3>Video Aula da Semana</h3>
+            <video src="https://file-examples.com/storage/fe46ad26fa67d4043a4b9e6/2017/04/file_example_MP4_480_1_5MG.mp4" width="200" height="200" controls>
+            </video>
+
+            <h3>Podcast</h3>
+            <audio controls>
+                <source src="file_example_MP3_700KB.mp3" type="audio/mp3">
+                Seu navegador não suporta o áudio
+            </audio>
+         </section>
+         <section>
+            <h3>Solicitação de Certificados</h3>
+            <form action="" method="get">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" 
+                placeholder="Digite seu nome" required>
+                
+               <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" 
+                placeholder="Digite seu email" required>
+
+                <br><br>
+
+                <label for="curso">Curso</label>
+                <select name="curso" id="curso" required>                    
+                    <option value="">Selecione</option>
+                    <option value="js">Desenvolvimento JS</option>                    
+                    <option value="python">Programação em Python</option>                    
+                    <option value="sql">Banco de Dados</option>
+                </select>
+                <br><br>
+                <label for="obs">Observações: </label>
+               <br>
+                <textarea name="obs" id="obs" rows="4" cols="50" 
+                placeholder="Se houver alguma observação, Informe aqui: "></textarea>
+                <button type="submit">Enviar</button>
+                <input type="submit" value="Solicitar">
+            </form>
+         </section>
+    </main>
+
+ <footer>
+    <p>Desenvolvido por Josiane Araujo Magalhães</p>
+    
+ </footer>
+</body>
+</html>
