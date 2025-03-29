@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tipos de Dados e Operadores</title>
+</head>
+<body>
+    
+    <h1>Exemplo de Tipos de Dados e Operadores</h1>
+
+    <script>
+//String
+         var nome = "JOSIANE";
+         var mensagem = "Olá Mundo";
+         var texto = "Hoje é um dia Feliz _texto Livre";
+
+         console.log("String: ", nome , mensagem , texto);
+
+//Number
+        var idade = 39;
+        var altura = 1.61;
+        var peso = 66;
+        var numeroNegativo = -10;
+
+        console.log("Number: ", idade , altura.toFixed(2) , peso , numeroNegativo)
+
+// Boleanos Boll (true ou false)
+
+        var verdade = true;
+        var falso = false;
+        var idade = 18;
+        var maiorIdade = idade >= 18;
+        var menorIdade = idade < 18;
+        
+        console.log(maiorIdade , menorIdade);
+
+        var igualdade = (10 == "10");
+        var igualdadeValorTipo = (10 === "10");
+        console.log(igualdade , igualdadeValorTipo);
+        console.log(typeof idade, typeof igualdade);
+
+// Null
+        var valorNulo = null ; 
+        console.log(valorNulo);
+
+// Operadores Aritméticos
+
+        var a = 10;
+        var b = 3;
+
+        var soma = a + b;
+        var sub = a - b;
+        var mult = a * b;
+        var div = a / b;
+        console.log(soma, sub, mult, div)
+        var modulo = a % b;
+        var potencia = a ** b ;
+        a++;
+        b--;
+        console.log("O Modulo é : ",modulo)
+        console.log("A potencia é: ",potencia)
+        console.log("Incremento é: ", a)
+        console.log("Decremento é : ", b)
+
+//Operadores de atribuição combinada
+
+       var num = 5;
+       // nume = num + 2;
+       num += 2;
+       console.log(num);  // 7 (5+2)
+
+       num -=1;
+       console.log(num); //6 (7-1)
+
+       num *= 3;
+       console.log(num); //18 (6*3)
+
+       num /= 2;
+       console.log(num)  // 9 (18/2)
+
+       num %= 4;
+       console.log(num) // 1  (resto da divisão)
+
+// Conversões de Valores
+
+  // string -> Number
+     
+     var numTexto = "39";
+     var convInt = parseInt(numTexto);
+     var convFloat = parseFloat(numTexto);
+     var convNumber = Number(numTexto);
+     console.log("Conversor String é :", numTexto);
+     console.log("Conversor Inteiro é :", convInt);
+     console.log("Conversor Float é :", convFloat);
+     console.log("Conversor Numerico é :", convNumber);
+
+  // Number -> String
+     var numero = 123;
+     var convString1 = numero.toString();
+     var convString2 = String(numero);
+     var convString3 = "" + numero;
+     console.log (" Primeiro Exemplo de conversor String é : " , convString1);
+     console.log (" Segundo Exemplo de conversor String é : " , convString2);
+     console.log (" Terceiro Exemplo de conversor String é : " , convString3);
+
+  // String -> Bool
+     var numPositivo = 39;
+     var numZero = 0;
+     var numNegativo = -10;
+     var boolPositivo = Boolean(numPositivo);
+     var boolZero = Boolean(numZero);
+     var boolNegativo = Boolean(numNegativo);
+     console.log("Esse é o numero Positivo : ", numPositivo);
+     console.log("Esse é o numero zero : " , numZero);
+     console.log("Esse é o numero Negativo : ", numNegativo);
+     console.log("Esse é o Boleano Positivo : " , boolPositivo);
+     console.log("Esse é o Boleano Zero : ", boolZero);
+     console.log("Esse é o Boleano Negativo : ", boolNegativo);
+
+// String -> Bool
+    var textoVerdadeiro = "true";
+    var textoFalso = "false";
+    var textoVazio = "";
+    var boolStr1 = Boolean(textoVerdadeiro);
+    var boolStr2 = Boolean(textoFalso);
+    var boolStr3 = Boolean(textoVazio);
+    console.log("String Bool 1 : ", boolStr1);
+    console.log("String Bool 2 : ", boolStr2);
+    console.log("String Bool 3 : ", boolStr3);
+
+// Bool -> String
+   var verdadeiro = true;
+   var falso = false;
+   var boolString1 = verdadeiro.toString();
+   var boolString2 = String(falso);
+   console.log("Esse é o boolString 1 :" , boolString1);
+   console.log("Esse é o boolString 2 :" , boolString2);
+   
+// Prompt
+   var nomeCompleto = prompt("Informe seu nome completo: ");  // Pede Informação
+   console.log(nomeCompleto);    // Pede os dados
+   console.log(typeof nomeCompleto);  // é o tipo
+   alert(nomeCompleto);   // Alerta na tela
+   
+
+
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
