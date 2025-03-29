@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tipos de Dados e Operadores</title>
+</head>
+<body>
+    
+    <h1>Exemplo de Tipos de Dados e Operadores</h1>
+
+    <script>
+
+// Soma : Crie um script que receba dois numero e exiba a soma deles:
+
+     var numero1 = prompt("Informe primeiro numero: ");
+     var numero2 = prompt("Informe segundo  numero: ");
+     var soma = (numero1 + numero2);
+     console.log("A soma dos dois numeros é :" , soma);
+
+// Subtração : Crie um script que receba dois numeros e exiba a diferença entre eles(primeiro - segundo)
+
+     var numero1 = prompt("Informe primeiro numero: ");
+     var numero2 = prompt("Informe segundo  numero: ");
+     var subtracao = (numero1 - numero2);
+     console.log("A subtração dos dois numeros é :" , subtracao);
+
+// Multiplicação : Crie um script que receba dois números e exiba o resultado da multiplicação (primeiro * segundo).
+
+     var numero1 = prompt("Informe primeiro numero: ");
+     var numero2 = prompt("Informe segundo  numero: ");
+     var multiplicacao = (numero1 * numero2);
+     console.log("A multiplicação dos dois numeros é :" , multiplicacao);
+
+// Divisão: Crie um script que receba dois números e exiba o resultado da divisão (primeiro ÷ segundo).
+
+     var numero1 = prompt("Informe primeiro numero: ");
+     var numero2 = prompt("Informe segundo  numero: ");
+     var divisao = (numero1 / numero2);
+     console.log("A divisão dos dois numeros é :" , divisao);
+
+// Modulo: Crie um script que receba dois números e exiba o resto da divisão entre eles (primeiro % segundo).
+
+     var numero1 = prompt("Informe primeiro numero: ");
+     var numero2 = prompt("Informe segundo  numero: ");
+     var modulo = (numero1 % numero2);
+     console.log("O modulo dos dois numeros é :" , modulo);
+
+// Sucessor: Crie um script que receba um número e mostre seu sucessor.
+
+     var numero = parseInt(prompt("Informe um numero: "));
+     numero++;
+     console.log("O sucessor do numero é :" , numero);
+
+// Antecessor: Crie um script que receba um número e mostre seu antecessor.
+
+     var numero = parseInt(prompt("Informe um numero: "));
+     numero--;
+     console.log("O Antecessor do numero é :" , numero);
+
+// Soma : Crie um script que receba três números e exiba a soma de todos.
+
+     var numero1 = parseInt(prompt("Informe primeiro numero: "));
+     var numero2 = parseInt(prompt("Informe segundo  numero: "));
+     var numero3 = parseInt(prompt("Informe terceiro numero: "));
+     var soma = ((numero1 + numero2) + numero3);
+     console.log("A soma dos três numeros é :" , soma);
+
+// Média: Crie um script que receba três números e calcule a média deles.
+
+     var numero1 = parseInt(prompt("Informe primeiro numero: "));
+     var numero2 = parseInt(prompt("Informe segundo  numero: "));
+     var numero3 = parseInt(prompt("Informe terceiro numero: "));
+     var media = ((numero1 + numero2 + numero3) / 3);
+     console.log("A média dos três numeros é :" , media);
+
+// Aréa do círculo : Crie um script que calcule a área de um círculo dado o valor de seu raio (fórmula: A = π (3.14) * r²).
+
+    var raio = parseFloat(prompt("Informe o Raio: "));
+    var area = 3.14 * raio**2;
+    console.log("Sua area é : " , area)
+    
+
+// Verdadeiro ou Falso: Crie um script que leia a idade de uma pessoa e exiba e retorno (true or false).
+
+     var idade = prompt("Informe sua idade: ");
+     var verdade = (idade == idade);
+     var falso = (idade != idade);
+     console.log("Sua idade é verdadeira :" , verdade);
+     console.log("Sua idade é false :" , falso);
+
+// Verdadeiro ou Falso : Crie um script que receba um número e exiba se ele é positivo, negativo ou zero (true or false) de cada um dos 3 tipos.
+
+     var numero = prompt(" Informe um numero: ");
+     var numPositivo = (numero > 0);
+     var numZero = (numero == 0)
+     var numNegativo = (numero < 0);
+     console.log(numPositivo)
+     console.log(numZero)
+     console.log(numNegativo)
+
+// Verdadeiro ou Falso : Crie um script que verifique se um número é par (true or false).
+
+     var numero = prompt(" Informe um numero: ");
+     var resultado = (numero % 2);
+     var par = (resultado == 0);
+     var impar = (resultado != 0);
+     console.log(par);
+     console.log(impar);
+
+// Verdadeiro ou Falso : Crie um script que receba dois números e exiba se o primeiro é maior que o segundo. (true or false)
+
+     var numero1 = prompt(" Informe o primeiro numero: ");
+     var numero2 = prompt(" Informe o segundo  numero: ");
+     maior = (numero1 > numero2);
+     menor = (numero1 < numero2);
+     console.log(maior);
+     console.log(menor);
+     
+// Verdadeiro ou Falso : Crie um script que verifique se um número está entre 10 e 20. (true or false).
+
+     var numero = prompt("Informe um numero: ");
+     var numero_10 = numero >= 10;
+     var numero_20 = numero <= 20;
+     console.log(numero_10); 
+     console.log(numero_20);
+
+     
+    </script>
+</body>
+</html>
