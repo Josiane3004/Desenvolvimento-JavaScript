@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades 7 JS Condicionais Não Obrigatorio</title>
+</head>
+<body>
+    
+    <h1>Atividades 7 JS Condicionais Não Obrigatorio</h1>
+    <script>
+
+//exercicio 1
+//1. Verificador de Notas
+//O usuário deve inserir sua nota (0 a 10). Usando if else, exiba sua classificação:
+//0 a 4 → Reprovado
+//5 a 6 → Recuperação
+//7 a 10 → Aprovado
+
+
+        var nota = 7;
+       
+        if(nota >=7) {
+            console.log("Aluno Aprovado!")
+        } else if (nota=5 || nota=6) {
+            console.log("Aluno em Recuperação!")
+        } else if (nota<=4) {
+            console.log("Aluno Reprovado!!")
+        }
+
+//exercicio 2
+// saber se o numero é par /impar
+
+        var numero =5;
+        if (numero % 2 === 0){
+            console.log("Meu numero é Par");
+        } else {
+            console.log("Meu numero é Impar");
+        }
+
+//exercicio 3
+//maior e menor numero
+
+        var num_1 = 20;
+        var num_2 = 10;
+        var num_3 = 30;
+        if (num_1 > num_2 && num_1 > num_3){
+            console.log("Numero Maior é: ", num_1)
+        } else if (num_2 > num_1 && num_2 > num_3){
+            console.log("Numero Maior é: ", num_2)
+        } else if (num_3 > num_1 && num_3 > num_2) {
+            console.log("Numero Maior é: ", num_3)
+        } 
+        if (num_1 < num_2 && num_1 < num_3){
+            console.log("Numero Menor é: ", num_1)
+        } else if (num_2 < num_1 && num_2 < num_3){
+            console.log("Numero Menor é: ", num_2)
+        } else if (num_3 < num_1 && num_3 < num_2) {
+            console.log("Numero Menor é: ", num_3)
+        } 
+       
+
+//outra forma de fazer exemplo do professor
+        var num_1 = 20;
+        var num_2 = 10;
+        var num_3 = 30;
+        
+        var maior = num_1;
+        var menor = num_1;
+
+        if(num_2>maior){
+            maior=num_2;
+        }
+        if(num_3>maior){
+            maior=num_3;
+        }
+        if(num_2<menor){
+            menor=num_2;
+        }
+        if(num_3<menor){
+            menor=num_3;
+        }
+        console.log(maior, menor);
+
+//exercicio 4
+//calculadora simples ==> use switch
+//var operação = + ou - / ou *
+// var numero1 = 10
+//var numero2 = 2
+
+        var operacao = "/" ;
+        var numero1 = 10;
+        var numero2 = 2;
+        switch(operacao) {
+            case "+":
+                console.log("Numero 1 + Numero 2: ", numero1 + numero2);
+                break; 
+            case "-":
+                console.log("Numero 1 - Numero 2: ", numero1 - numero2);
+                break;
+            case "*":
+                console.log("Numero 1 * Numero 2: ", numero1 * numero2);
+                break; 
+            case "/":
+                console.log("Numero 1 / Numero 2: ", numero1 / numero2);
+                break;
+            default:
+                console.log("Operação Inválida: ") 
+            
+            }
+
+        
+            
+
+    </script>
+</body>
+</html>
