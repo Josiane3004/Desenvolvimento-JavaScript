@@ -29,6 +29,62 @@
         //alterar a posição
         frutas[1] = "Abacate";
         console.log(frutas);
+//adiciona na posição primeira
+        frutas.unshift("Uva");
+        console.log(frutas)
+//deleta o ultimo item
+        frutas.pop();
+        console.log(frutas);
+//deleta o primeiro
+        frutas.shift();
+        console.log(frutas);
+//remove o item na posição
+        frutas.splice(1,1);
+        console.log(frutas);
+//splice(posição que vou trabalhar,vou remover, vou inserir...)
+        frutas.splice(1,0,"Abacate", "Pitaya");
+        console.log(frutas);
+//imprime a posição que eu quero
+        console.log(frutas.slice(0,2));
+       //ver se o item esta incluso no array 
+        console.log(frutas.includes("Banana"));
+//ver qual posição o item esta no array
+        console.log(frutas.indexOf("Banana"));
+//aqui coloquei com letra minuscula ele não encontra
+        console.log(frutas.indexOf("banana"));
+
+
+
+//OBJETOS
+        var pessoa ={
+            "Nome": "Josiane",
+            "Idade": "39",
+            "Altura": "1.61",
+            "Peso": "67"
+        }
+        console.log(pessoa);
+        console.log(pessoa.Nome);
+        console.log(pessoa["Nome"]);
+//adiciona mais campo ao objeto
+        pessoa.cidade = "Presidente Prudente-SP";
+        console.log(pessoa);
+//deleta o objeto que eu desejo
+        delete pessoa.cidade;
+        console.log(pessoa);
+//verifica se a chave existe no objeto
+        console.log("Nome" in pessoa);
+        console.log("Idade" in pessoa);
+//Retorna o que esta no Objeto sem o campo de Nome, Idade et
+        console.log(Object.values(pessoa));
+//Verifica se o campo esta incluido no Objeto
+        console.log(Object.values(pessoa).includes("Josiane"));
+
+        
+
+        
+
+
+    
 
     </script>
 </body>

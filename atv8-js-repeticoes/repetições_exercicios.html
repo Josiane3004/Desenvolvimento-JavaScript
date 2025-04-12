@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIOS DE REPETIÇÕES</title>
+</head>
+<body>
+    <h1>EXERCICIOS DE REPETIÇÕES</h1>
+
+    <script>
+
+//CONTADOR DE 1 ATE 10
+        for(var contador = 1; contador <=10; contador++){
+            console.log("Repetição de 1 a 10: ", contador)
+        }
+
+//CONTAGEM REGRESSIVA 10 ATÉ 0
+        var cont = 10
+        while(cont >-1){
+            console.log(cont);
+            cont--;
+        }
+
+//TABUADA DO 7
+        for(tabuada = 0; tabuada <=10; tabuada++){
+            resultado = (tabuada * 7)
+            console.log(resultado)
+        }
+//TABUADA DO 7 FEITA PELO PROFESSOR
+            for(numero = 1; numero <=10; numero++){
+            console.log("7 x " + numero + " = " +(7 * numero))
+//MESMO JEITO DE IMPRIMIR ACIMA
+            console.log(`7 x ${numero} = ${7*numero}`)
+        }
+
+//MOSTRAR NUMEROS PARES DE 0 ATÉ 50. EXCETO 10 E 20
+          for (var i = 0; i<=50; i+=2){
+            if (i == 10 || i ==20){
+            continue;}
+            console.log(i);
+       }
+       
+
+
+
+
+
+    </script>
+</body>
+</html>

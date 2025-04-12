@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLOS DE FUNÇÕES</title>
+</head>
+<body>
+    <h1>EXEMPLOS DE FUNÇÕES</h1>
+    <script>
+
+        function saudacao(){
+            console.log("Olá Mundo!!!");
+        }
+
+        saudacao();
+
+//saudação com parametro
+        function saudacaocomparametro(nome){
+            console.log("Olá Mundo!!! Eu sou " + nome);
+        }
+
+        saudacaocomparametro("Josiane");
+        saudacaocomparametro("Heitor");
+
+
+// o primeiro ele colocou como Ola e o segundo 
+//ele substitui o ola por oi que eu determinei em baixo
+        function saudacaocomargopcional(nome, saudacao = "Olá") {
+            console.log(saudacao + " , " + nome);
+        }        
+        saudacaocomargopcional("Josiane");
+        saudacaocomargopcional("Heitor", "Oi");
+
+//função de somar dois numeros
+        function somar(numero1, numero2){
+            console.log(numero1 + numero2);
+        }
+        somar(5,2);
+        somar(8,3);
+
+//função com retorno
+        function somarRetorno(numero1, numero2){
+            return (numero1 + numero2);
+        }
+        var soma = somarRetorno(5,2);
+        console.log(soma)
+
+//Media de notas (de 3 Notas)
+        function media(n1,n2,n3){
+            return ((n1 + n2 + n3)/3);
+        }
+        console.log(media(10,10,10));
+
+//mesma fora acima de forma diferente
+        var m = media(3,1,10);
+        if(m > 7){
+            console.log("passou");
+        } else {
+            console.log("até o ano que vem!")
+        }
+
+    </script>
+</body>
+</html>

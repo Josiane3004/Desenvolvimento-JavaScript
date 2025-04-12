@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLOS DE REPETIÇÕES</title>
+</head>
+<body>
+    <h1>EXEMPLOS DE REPETIÇÕES</h1>
+
+    <script>
+//a vale zero, determino que vai fazer a condição até o numero chegar a 5, e o a++ é o incremento
+        for(var a = 0; a < 5; a++){
+            console.log("Repetição com FOR: ",a);        
+        }
+//mesma informação acima só que nesse caso ele incrementa de 2 em dois
+        for(var i = 0; i <= 10; i+=2){
+            console.log(i);
+        }
+//mesma informação acima só que nesse caso ele incrementa de 2 em dois, aqui quando começa com zero é par
+        for(var i = 0; i <= 10; i+=2){
+            console.log(i);
+        }
+//mesma informação acima só que nesse caso ele incrementa de 2 em dois, aqui quando começa com um é impar
+for(var i = 1; i <= 10; i+=2){
+            console.log(i);
+        }
+
+//criar array e percorrer , lista posição      
+        alunos = ["Josiane", "Marciano" , "Lucas", "Roberta"];
+        for(var i = 0; i < alunos.length; i++) {
+            console.log(i)
+        }
+//criar array e percorrer , lista objeto (nome)
+        alunos = ["Josiane", "Marciano" , "Lucas", "Roberta"];
+        for(var i = 0; i < alunos.length; i++) {
+            console.log(alunos[i])
+        }
+//Mesmo resultado acima, porem mais simples, aqui eu percorro a variavel aluno no alunos
+        for(var aluno of alunos){
+            console.log(aluno)
+        }
+//Deleta a posição que eu quero
+        delete alunos[0];
+        for(var aluno of alunos){
+            console.log(aluno)
+        }
+
+        var carro = {
+            "ano": 2025,
+            "Modelo": "Nivus",
+            "Cor": "Prata"
+        }
+
+        for(var chave in carro){
+            console.log(carro[chave]);
+        }
+
+        
+        var contador = 0;
+//aqui entra em looping
+    //    while (contador < 5) {
+      //      console.log(contador);
+       // }
+
+        var contador = 0;
+//aqui colocando o incremento ele vai até o 5 que você precisa
+        while (contador < 5) {
+            console.log(contador); 
+            contador++;
+        }
+
+//soma numero zero a 10
+
+        numero =0;
+        soma = 0;
+        while (numero <=10){
+            soma = numero
+            numero++;
+        }
+        console.log(soma);
+
+//
+        numero =0;
+        soma = 0;
+        while (numero <=10){
+            soma = soma + numero;
+            numero++;
+        }
+        console.log(soma);
+//igual acima
+        numero =0;
+        soma = 0;
+        while (numero <=10){
+            soma += numero;
+            numero++;
+        }
+        console.log(soma);
+//
+        numero =0;
+        soma = 0;
+        while (numero <=10){
+            numero++;
+            soma += numero;
+            
+        }
+        console.log(soma);
+//
+        numero =0;
+        soma = 0;
+        while (numero <=10){
+            numero++;
+            soma += numero;
+            console.log(soma);            
+        }
+//breach para execução quando atingir o numero que eu quero que seria o 5
+       var x = 0;
+       while (x <=20){
+        if (x === 5){
+            break;
+        }
+        console.log(x);
+        x++;
+       }
+//continue 
+var y = 0;
+       while (y <=20){
+        y++;
+        if (y === 5){
+            continue;
+        }
+        console.log(y);
+    
+       }
+
+//continue par pula o impar e fica só o par
+        var y = 0;
+        while (y <=20){
+         y++;
+         if (y %2 !=0){
+            continue;
+        }
+        console.log(y);
+    
+       }
+
+//continue impar pula o par e fica o impar
+       var y = 0;
+        while (y <=20){
+         y++;
+         if (y %2 ==0){
+            continue;
+        }
+        console.log(y);
+    
+       }
+
+//do while == executa pelo menos uma vez
+       var count = 10;
+       do{
+        console.log(count);
+        count++;
+       } while (count < 5);
+
+
+    </script>
+</body>
+</html>
