@@ -60,6 +60,50 @@
             console.log("até o ano que vem!")
         }
 
+//nota >=7 e o numero de faltas <=4
+        function verificarAprovacao(n1,n2,n3,numFaltas){
+            var media = (n1 + n2 + n3) / 3
+            if (media >= 7 && numFaltas <=4){
+                return "Parabens você foi Aprovado";
+            }
+            else{
+                return "Que pena Você foi Reprovado";
+            }
+        }
+
+        console.log("Situação: ", verificarAprovacao(10,8,5,3));
+        console.log("Situação: ", verificarAprovacao(10,8,5,5));
+        console.log("Situação: ", verificarAprovacao(3,5,5,0));
+
+// gerar tabuada, litsa array [10, 5, 3, 8, 2]
+        
+function gerarTabuada(numeros){
+            for (var i = 0; i < numeros.length; i++){
+                console.log(`Tabuada do ${numeros[i]}`);
+                for(var j = 1; j <= 10; j++ ){
+                    console.log(`${numeros[i]} x ${j} = ${numeros[i] * j}`)
+                }
+            }
+        }
+
+        gerarTabuada([10,5,3,8,2])
+
+        // verificar se é bissexto ou não !   ser div 4 e não por 100
+//(ano /4 não ano/100) ou (ano /400) o || significa or
+
+
+        ano = parseFloat(prompt("Informe o ano: "));
+        function bissexto(ano){
+            if (bissexto % 4 == 0 && (bissexto % 100 != 0) || (bissexto % 400 == 0)){
+                console.log(`O ano digitado ${ano} não é bissexto`);
+            }
+            else{
+                console.log(`O ano digitado ${ano} é bissexto`);
+            }
+    
+        } 
+        bissexto(ano)
+
     </script>
 </body>
 </html>

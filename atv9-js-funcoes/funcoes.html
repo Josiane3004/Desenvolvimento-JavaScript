@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Pratica Funções</title>
+</head>
+<body>
+    <h1>Atividades Praticas Funções</h1>
+    <script>
+//Criar função para verificar se um numero é par ou impar
+
+        function parimpar(numero){
+            resultado = numero % 2;
+            if (resultado == 0){
+                return "MEU NUMERO É PAR !";
+            }
+            else {
+                return "MEU NUMERO É IMPAR !";
+            }
+            
+        }
+        console.log("O numero informado é :", parimpar(5));
+        
+//exemplo professor
+        function parImpar(numero){
+            if (numero % 2 == 0){
+                console.log(`O numero ${numero} é par`);
+            }
+            else{
+            console.log(`O numero ${numero} é impar`);
+            }
+        }
+        parImpar(5);
+        parImpar(2);
+
+// gerar tabuada, litsa array [10, 5, 3, 8, 2]
+        
+        function gerarTabuada(numeros){
+            for (var i = 0; i < numeros.length; i++){
+                console.log(`Tabuada do ${numeros[i]}`);
+                for(var j = 1; j <= 10; j++ ){
+                    console.log(`${numeros[i]} x ${j} = ${numeros[i] * j}`)
+                }
+            }
+        }
+
+        gerarTabuada([10,5,3,8,2])
+
+//IMC, RECEBER PESO E ALTURA E CALCULAR IMC
+//VERIFICAR SE A PESSOA ESTA ABAIXO DO PESO, PESO NORMAL, SOBREPESO OU OBESIDADE.
+//ABAIXO 18.5 ==> ABAIXO DO PESO
+//ENTRE 18.5 E 24.9 ==> PESO NORMAL
+//IGUAL OU ACIMA DE 25 E ABAIXO DE 29.9 ==> SOBREPESO
+//ACIMA DE 29.9 ==> OBESIDADE
+
+        function CalcularIMC(peso,altura){
+            IMC = (peso / (altura*altura))
+            if (IMC < 18.5){
+                console.log("Você esta abaixo do peso! "); 
+            }
+            else if (IMC >=18.5 && IMC <=24.9){
+                console.log("Você esta no peso normal! ");
+            }
+            else if (IMC >=25 && IMC <=29.9){
+                console.log("Você esta em SobrePeso!!");
+            }
+            else{
+                console.log("VOCÊ ESTA EM OBESIDADE MORMIDA!!!")
+            }
+
+        }
+          peso = parseFloat(prompt("Informe seu peso: "));
+          altura = parseFloat(prompt("Informe sua Altura : "));     
+    
+        CalcularIMC(peso,altura)   
+
+
+// verificar se é bissexto ou não !   ser div 4 e não por 100
+//(ano /4 não ano/100) ou (ano /400)
+
+
+        ano = parseFloat(prompt("Informe o ano: "));
+        function bissexto(ano){
+            if (bissexto % 4 == 0 && (bissexto % 100 != 0) || (bissexto % 400 == 0)){
+                console.log(`O ano digitado ${ano} não é bissexto`);
+            }
+            else{
+                console.log(`O ano digitado ${ano} é bissexto`);
+            }
+    
+        } 
+        bissexto(ano)
+
+    </script>
+</body>
+</html>

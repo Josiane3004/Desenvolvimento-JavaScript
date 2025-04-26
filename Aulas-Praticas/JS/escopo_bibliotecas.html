@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOPO E BIBLIOTECAS</title>
+</head>
+<body>
+    <h1>ESCOPO E BIBLIOTECAS</h1>
+    <script>
+//exemplo do VAR
+        function exemploVar(){
+            var x = 10;
+            console.log("Antes do if meu x vale: ", x);
+            if (1 == 1){
+                var x = 20;
+                console.log("Dentro do if meu x vale: ", x);
+            }
+            console.log("Fora do if meu x vale: " , x);
+        }
+
+        exemploVar();
+
+//exemplo do LET , ele não sobrepoe
+            function exemploLet(){
+            let x = 10;
+            console.log("Antes do if meu x vale: ", x);
+            if (1 == 1){
+                let x = 20;
+                console.log("Dentro do if meu x vale: ", x);
+            }
+            console.log("Fora do if meu x vale: " , x);
+        }
+
+            exemploLet();
+
+            var nome = "Josiane";
+            var nome = "Heitor";
+            let idade = 15;
+            idade = 16;
+           //aqui não permite 2 vezes o mesmo nome let idade = 16;
+
+           //aqui não permite declarar com outro valor pois é constante
+           const pi = 3.1415;
+           //const pi = 5;
+           //pi = 3.15;
+           
+           const pessoa = {"nome": "Maria"}
+           console.log(pessoa);
+           pessoa.nome = "Josiane";
+           console.log(pessoa);
+
+//bibliotecas
+
+        
+
+    </script>
+</body>
+</html>
