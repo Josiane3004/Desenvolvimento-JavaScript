@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Bibliotecas</title>
+</head>
+<body>
+    
+    <h1>Exemplos de Bibliotecas</h1>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        // Inicio Bibliotecas
+
+            // Biobliotecas Math
+        var numero = 10.5;
+        console.log("Arredondamento para baixo",Math.floor(numero));
+        console.log("Arredondamento para cima",Math.ceil(numero));
+        console.log("Arredondamento para o mais proximo",Math.round(numero));
+
+        var array = [10,20,30,40,50,60];
+        console.log("Maior Valor",Math.max(...array));
+        console.log("Maior Valor sem array",Math.max(10,20,30,40,50));
+        console.log("Menor Valor",Math.min(...array));
+        console.log("Menor Valor sem array",Math.min(20,30,40,50));
+
+        console.log("Raiz quadrada sem bibioteca", 16**0.5);
+        console.log("Raiz quadrada com Biblioteca",Math.sqrt(16));
+
+        console.log("Potência sem Biblioteca", 2 ** 3);
+        console.log("Potência com Biblioteca",Math.pow(2,3));
+
+        console.log("Valor de PI com Biblioteca",Math.PI);
+        console.log("Valor de PI definindo decimais",Math.PI.toFixed(2));
+            // Fim Bibliotecas Math
+        
+            // Bibliotecas Date
+        var data = new Date(); //Pega data do computador
+        console.log("Data Atual", data);
+        console.log("Dia", data.getDate());
+        console.log("Mês", data.getMonth()+1);
+        console.log("Ano", data.getFullYear());
+        console.log("Hora", data.getHours());
+        console.log("Minuto", data.getMinutes());
+        console.log("Segundos", data.getSeconds());
+        console.log("Dia da Semana", data.getDay());
+
+            //Outro exemplo
+            var data = new Date("05/10/2025"); //Pega data que declarei 10/05/2025
+            console.log("Data Atual", data);
+            console.log("Dia", data.getDate());
+            console.log("Mês", data.getMonth()+1);
+            console.log("Ano", data.getFullYear());
+            console.log("Hora", data.getHours());
+            console.log("Minuto", data.getMinutes());
+            console.log("Segundos", data.getSeconds());
+            console.log("Dia da Semana", data.getDay());
+            // Fim Bibliotecas Date
+        
+        
+            // Bibliotecas com Jquery 
+        $("h1").css("color","blue");  //trocou a cor do meu titulo h1
+        $("h1").css({
+            "color": "red",             // cor do texto
+            "font-family": "Arial",    // letra
+            "font-size": "100px",      // tamanho fonte
+            "text-align": "center"     //muda para centro
+
+        })
+
+
+
+
+
+
+
+
+        // Fim Bibliotecas
+
+    </script>
+</body>
+</html>
