@@ -20,15 +20,6 @@
     <ul class="list-group mb-3" id="listaTarefas"></ul>
 
     <p class="text-end fw-bold">Total de tarefas: <span id="contador">0</span></p>
-
-    <div class="d-flex justify-content-between mt-4">
-      <div class="upload-area">
-        <input type="file" name="upload" id="upload" accept=".json" class="d-none" onchange="uploadJson(event)">
-        <button id="btnUpload" class="btn btn-success" onclick="document.getElementById('upload').click()">Upload Json</button>
-      </div>
-      <button id="btnDownload" onclick="downloadJson()" class="btn btn-info">Download Json</button>
-    </div>
-
   </div>
 
   <script>
@@ -81,7 +72,6 @@
       }
       atualizarContador();
       salvarLocalStorage();  /// carregar aqui para salvar
-      atualizarBotoes();
     }
 
     function editarTarefa(item){
@@ -124,95 +114,7 @@
 
     }
 
-    function atualizarBotoes(){
-      let btnUpload = document.getElementById("btnUpload");
-      let btnDowload = document.getElementById("btnDownload");
-
-      if (tarefas.length > 0){
-        btnDowload.disabled = false;
-        btnUpload.disabled = true;
-      } else{
-        btnDowload.disabled = true;
-        btnUpload.disabled = false;
-      }
-    }
-
-    function downloadJson(){
-      if (tarefas.length ==0){
-        alert("Não existem tarefas para baixar!");
-        return;
-      }
-
-      let dataStr = JSON.stringify(tarefas);
-
-      let blob = new Blob([dataStr], {type: "application/json"});  /// aqui estou criando o temporario para baixar o arquivo
-      let url = URL.createObjectURL(blob);  ///cria a url para baixar o arquivo temporario
-
-      let link = document.createElement("a"); // aqui estou criando um link para baixar o arquivo (a) tag
-      link.href = url;
-      link.download = "tarefas.json";
-      link.click();
-//remove link e url do arquivo
-      URL.revokeObjectURL(url);
-      link.remove();
-
-
-
-    }
-
-    function uploadJson(arquivo){
-      
-      let file = arquivo.target.files[0];
-      if (!file){ //// se não tiver nada nesse aquivo ! negação
-        alert("Arquivo não existe!");
-        return;
-      }
-
-      let reader = new FileReader();  /// ler o arquivo
-
-      reader.onload = function (e){
-
-        try{
-
-          let dados = JSON.parse(e.target.result);  ///tratando o arquivo para ler o resultado
-
-          if(!Array.isArray(dados)){  ///verificar se é um array e negando
-           alert("Arquivo JSON inválido!");
-           return;
-          }  
-
-          for (let tarefa of dados){// o let cria a variavel só no scopo
-            if(typeof tarefa != "string"){
-              alert("Arquivo JSON inválido! Todas as tarefas devem ser texto!");
-              return;
-            }
-
-          }   
-
-          if(tarefas.length > 0){
-            alert("Para o upload funcionar, a lista tem que estar vazia!");
-            return;
-          }
-
-          tarefas = dados;
-          atualizarLista();
-
-
-        } catch(error){  ///trata o erro 
-          alert("Erro ao ler o arquivo JSON!!" + error.message); ///dá o alerta e a mensagem de erro
-
-        }  
-      }
-
-      reader.readAsText(file);  //
-
-      arquivo.target.value = "";
-
-
-    }
-
     carregarLocalStorage();   /// aqui para ele carregar o que foi digitado
-    atualizarBotoes();
 
 
 
